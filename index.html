@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRESystem</title>
+  <!-- CSS only -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous" 
+  />
+  <link rel="stylesheet" href="./style.css">  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="./images/logo.JPG" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        GRE System
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#learn" class="nav-link">제품소개</a>
+          </li>
+          <li class="nav-item">
+            <a href="#questions" class="nav-link">자주묻는질문</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonies" class="nav-link">이용후기</a>
+          </li>
+          <li class="nav-item">
+            <a href="#company" class="nav-link">회사소개</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Showcase -->
+  <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="showcase">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="col-md">
+          <h1>Become a <span class="text-warning">Smart EV Driver</span></h1>
+          <p class="lead my-4">
+            우리는 일상적인 생활공간 속에서 편하고 합리적으로 충전이 가능한 기술과 서비스를 구현합니다.
+            <br/>언제 어디서나 충전이 가능.. 생활밀착형 충전스타일의 시작!
+          </p>
+          <p class="lead my-4">
+            전기차 충전을 위한 가장 좋은 방법.. 전문가에게 문의하십시오.
+          </p>
+          <button 
+            class="btn btn-primary btn-lg mb-5"
+            data-bs-toggle="modal"
+            data-bs-target="#enroll"
+          >
+            상담하기
+          </button>
+        </div>
+        <div class="col-md d-none d-sm-block">
+          <img 
+            class="img-fluid" 
+            src="./images/charging.JPG" 
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Letter -->
+  <section class="bg-primary text-light p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h4 class="mb-3 mb-md-0">관련된 소식들을 보거나 받으실 수 있습니다.<br/>
+          <a href="#"><em class="bi bi-twitter text-light mx-1"></em></a>
+          <a href="#"><em class="bi bi-facebook text-light mx-1"></em></a>
+          <a href="#"><em class="bi bi-linkedin text-light mx-1"></em></a>
+          <a href="#"><em class="bi bi-instagram text-light mx-1"></em></a>
+          <a href="#"><img src="./images/kakao_logo.JPG" alt="" width="30" height="30" class="text-light mx-1"></a>
+          <a href="#"><img src="./images/naver_logo.JPG" alt="" width="30" height="30" class="text-light mx-1"></a>
+        </h4>
+        <div class="input-group news-input">
+          <input 
+            type="text" 
+            class="form-control" 
+            placeholder="소식을 받으시려면 이메일 주소를 입력해 주세요" 
+          />
+          <button
+            class="btn btn-dark btn-lg" 
+            type="button" 
+          >
+            등록하기
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boxes -->
+
+  <section class="p-5" id="boxes">
+    <div class="row text-center g-4">
+      <div class="col-md">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <em class="bi bi-laptop"></em>
+              <img src="./images/daeyou_logo.JPG" alt="">
+            </div>
+            <h3 class="card-title mb-3">대유플러스</h3>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adip
+              isicing elit. Dolor officia tenetur repellendus, 
+              sunt cupiditate voluptatum. 
+            </p>
+            <a href="#" class="btn btn-primary">대유플러스방문</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card bg-secondary text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <em class="bi bi-person-square"></em>
+            </div>
+            <h3 class="card-title mb-3">홈앤서비스</h3>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adip
+              isicing elit. Dolor officia tenetur repellendus, 
+              sunt cupiditate voluptatum. 
+            </p>
+            <a href="#" class="btn btn-dark">홈앤서비스방문</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <em class="bi bi-people"></em>
+            </div>
+            <h3 class="card-title mb-3">지커넥트</h3>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adip
+              isicing elit. Dolor officia tenetur repellendus, 
+              sunt cupiditate voluptatum. 
+            </p>
+            <a href="#" class="btn btn-primary">지커넥트 방문</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn Sections -->
+  <section id="learn" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md d-flex justify-content-center">
+          <img src="./images/CP100_md.JPG" class="img-fluid" alt="">
+        </div>
+        <div class="col-md p5">
+          <h2 class="mb-5">차지플러스®</h2>
+          <h2>"상시적인 생활 충전 환경 조성"</h2>
+          <h3 class="mb-3">언제 어디서나 충전 가능하게, <br/>생활 밀착형 충전스타일의 시작!</h3>
+          <p>
+            차지플러스는 RFID/NFC 지원을 통한 사용자 인증, <br/>전력량계 1.0등급 정밀도의
+            실시간 충전전력량 계량 및 <br/>와이파이 및 LTE Cat. M1 이동 통신망을 사용하는
+            실시간 통신을 지원하며 <br/>전기자동차 충전기 통신 표준규격인 OCPP 1.6 버전을
+            지원하는 <br/>220V 콘센트접속형 전기자동차 충전기 입니다.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           
+          </p>
+          <a href="#" class="btn btn-light mt-3">
+            <em class="bi bi-chevron-right"></em> Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="learn" class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-md p5">
+          <h2 class="mb-5">"생활 중심의 충전 환경 지원-과금형콘센트 차지플러스"</h2>
+          <ul>
+            <li>
+              정부정책 및 기술기준을 준수한 제품
+              <ul>
+                <li>산업통상자원부 고시 제2020-230호 기술 기준 준수</li>
+                <li> KC 안전인증, 무선 전자파 인증, 전력 계량기 1급 인증</li>
+              </ul>
+            </li>
+            <li>기존 충전 사업자와 정부 정책 변화에 따른 소비자 요구 사항 수용</li>
+            <li>국제 표준 규격 OCPP 1.6지원</li>
+            <br/>
+            <li>상대적으로 낮은 설치 비용 (7kw 완속충전기 대비 약 25% 수준)</li>
+            <li>별도의 전력 공급 공사 및 한국전력 계량기 설치 필요 없음</li>
+            <li>기존 배선 및 콘센트를 활용한 일상 생활 중심의 충전 인프라 구축 가능)</li>
+            <br/>
+            <li>다양한 형태의 결제 방식 지원을 통한 접근 제어(회원카드, 앱 인증 결제 등)</li>
+            <li>사용자 인증 기반의 충전서비스 제공으로 완벽한 도전 차단 가능</li>
+            <li>별도의 주차구역 지정이 필요 없이 주차면 부족으로 인한 주차 분쟁 최소화</li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3">
+            <em class="bi bi-chevron-right"></em> Read More
+          </a>
+        </div>
+        <div class="col-md">
+          <img src="./images/charging2.JPG" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="learn" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md d-flex justify-content-center">
+          <img src="./images/spec_outer.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md p5">
+          <h2 class="mb-3">기술기준에 따른 형식승인 인증사항</h2>
+          <table class="table table-bordered table-hover mb-3">
+            <thead>
+              <tr>
+                <td>단상전자식전력량계</td>
+                <td>KC 안전인증</td>
+                <td>전자파적합성등록</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>제 KTC-G-21-027 호</td>
+                <td>KC 60884-1</td>
+                <td>RFID 13.5596 MHz</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>KC 60669-1</td>
+                <td>WLAN 2.4GHz</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>KC 60669-2-1</td>
+                <td>LTE Cat. M1 Band 3</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>KS C 8305</td>
+                <td>LTE Cat. M1 Band 5</td>
+              </tr>
+            </tbody>
+          </table>
+          <a 
+            href="#" 
+            class="btn btn-light mt-3"
+            data-bs-toggle="modal"
+            data-bs-target="#detailedSpec"
+          >
+            <em class="bi bi-chevron-right"></em> 상세 제원 보기
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="learn" class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-md p5">
+          <h2 class="mb-5">"쉽고 간편한 설치 및 사용법"</h2>
+          <ul>
+            <li>주차장 기둥 또는 벽면에 노출된 콘센트를 제거하고 그 위치에 매립하여 설치</li>
+            <li>잠시 후 전원이 투입되면 충전준비 완료</li>
+            <li>주차장 기둥 또는 벽면에 노출된 차지플러스에 이동형충전케이블 연결 (J1772 규격의 표준케이블, 테슬라 포함
+              모든 전기자동차 충전 가능)
+            </li>
+            <li>사용 지시에 따라서 충전 또는 회원가입 후 충전준비</li>
+            <li>휴대폰, 교통카드, 신용카드, 아파트 주민카드 등 RFiD/NFC를 지원하는 다양한 매체를 인증수단으로 사용</li>
+            <li>한번 Touch 충전시작, 또 한번 Touch 충전종료 등 토글방식으로 간편하게 충전</li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3">
+            <em class="bi bi-chevron-right"></em> 문의사항
+          </a>
+        </div>
+        <div class="col-md">
+          <img src="./images/howtouse.JPG" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Question Accordion -->
+  <section class="p-5" id="questions">
+    <div class="container">
+      <h2 class="text-center mb-4">자주 묻는 질문</h2>
+      <div class="accordion accordion-flush" id="questions">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button 
+              class="accordion-button collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#question-one"
+            >
+              전기자동차 어디서 충전하나요? 
+            </button>
+          </h2>
+          <div 
+            id="question-one" 
+            class="accordion-collapse collapse" 
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              대부분의 전기자동차 소유자들은 현재 공영충전기 (공영주차장, 공공기관 또는 고속도로 휴게소)를
+              이용하여 충전을 합니다. 한편 급속 또는 완속충전기가 설치된 아파트 등이 늘어나고 있습니다. <br>
+              마치 휴대전화 충전하듯이 퇴근하면 주차한 위치에서 충전을 시작하고, 다음 날 출근할 수
+              있으면 참 좋은데 아직 충전기이 그렇게 편하진 않습니다. 
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button 
+              class="accordion-button collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#question-two"
+            >
+              과금형콘센트, 너무 느리지 않나요? 
+            </button>
+          </h2>
+          <div 
+            id="question-two" 
+            class="accordion-collapse collapse" 
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              보통 퇴근하고 8시 쯤 충전을 시작해서 다음날 6시에 출근한다면 약 10시간 정도 충전이 이뤄지는데 이 정도의
+              시간이면 26kWh ~ 33kWh 정도의 전력이 충전되고, 계절이나 주행 습관에 따라서 다르겠지만 6km / kWh 정도의
+              전비를 가정하면 이렇게 충전했을 때 156km ~ 198km 정도를 주행할 수 있습니다. <br>
+              우리나라 직장인들의 하루 평균 주행거리가 왕복 40 ~ 60km 정도가 된다고 하니까, 3일에 한번 정도 퇴근 후 
+              충전케이블을 꽂아 두시면 되는데, 문제가 될까요? <br> 
+              물론 특별히 출장을 가거나 장거리 여행을 하게 될 경우엔 고속도로 휴게소에 설치된 급속충전기를 이용하시면
+              됩니다.
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button 
+              class="accordion-button collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#question-three"
+            >
+            차지플러스를 이용하려면 어떻게 해야 하나요? 
+            </button>
+          </h2>
+          <div 
+            id="question-three"
+            class="accordion-collapse collapse" 
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              상담요청을 남기시면 가장 빠르게 전문가로부터 연락을 받으실 수 있습니다. <br>또한 현재 차지플러스를
+              충전서비스에 사용하고 있는 아래의 충전서비스 수행 파트너사로 연락을 하셔도 됩니다. 
+              <ul>
+                <li><a href="https://www.homenservice.com/html/Charging/ChargingIntroduction.html">홈앤서비스 | SK브로드밴드</a></li>
+                <li><a href="https://dayouplus.co.kr/electricCar">대유플러스</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button 
+              class="accordion-button collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#question-four"
+            >
+              전기자동차와 온실가스, 무슨 관계가 있나요?
+            </button>
+          </h2>
+          <div 
+            id="question-four"
+            class="accordion-collapse collapse" 
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              전기자동차를 이용하는 것은 저탄소사회를 앞당기는데 엄청난 기여를 하게 됩니다. 참고로 전기자동차
+              한 대가 가져오는 연간 온실가스 저감효과는 약 2.4톤으로 이는 축구장 1/3 면적의 30년생 소나무 숲을 새로 조성한 것과
+              같은 효과 입니다.
+            </div>
+          </div>
+        </div>                
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructors -->
+  <section id="testimonies" class="p-5 bg-primary">
+    <div class="container">
+      <h2 class="text-center text-white">이용 후기</h2>
+      <p class="lead text-center text-white mb-5">
+        차지스타를 이용하는 사례별로 나열하였습니다. 추가적인 이용 후기는 SNS 등을 통하여 지속적으로 확인할 수 있으며
+        새로운 시나리오가 발굴되면 이를 즉시 공유함으로써 새로운 고객의 수요를 발굴하고 지원하도록 하겠습니다.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/11.jpg"
+               class="rounded-circle mb-3" 
+               alt=""
+              />
+              <div class="card-title mb-3">
+                John Doe
+              </div>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Reprehenderit facilis veniam vel? Qui magni quisquam vero.
+              </p>
+              <a href="#"><em class="bi bi-twitter text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-facebook text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-linkedin text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-instagram text-dark mx-1"></em></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/women/11.jpg"
+               class="rounded-circle mb-3" 
+               alt=""
+              />
+              <div class="card-title mb-3">
+                Jane Doe
+              </div>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Reprehenderit facilis veniam vel? Qui magni quisquam vero.
+              </p>
+              <a href="#"><em class="bi bi-twitter text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-facebook text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-linkedin text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-instagram text-dark mx-1"></em></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg"
+               class="rounded-circle mb-3" 
+               alt=""
+              />
+              <div class="card-title mb-3">
+                Steve Smith
+              </div>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Reprehenderit facilis veniam vel? Qui magni quisquam vero.
+              </p>
+              <a href="#"><em class="bi bi-twitter text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-facebook text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-linkedin text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-instagram text-dark mx-1"></em></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/women/12.jpg"
+               class="rounded-circle mb-3" 
+               alt=""
+              />
+              <div class="card-title mb-3">
+                Sarah Smith
+              </div>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Reprehenderit facilis veniam vel? Qui magni quisquam vero.
+              </p>
+              <a href="#"><em class="bi bi-twitter text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-facebook text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-linkedin text-dark mx-1"></em></a>
+              <a href="#"><em class="bi bi-instagram text-dark mx-1"></em></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Map -->
+  <section id="company" class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">연락처 및 오시는 길</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">본사 및 공장:</span> 경기도 용인시 기흥구 중부대로 184, A동311호 (힉스유타워)
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">대표번호:</span> (070) 4196-8261
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">연구소 및 공장:</span> 경기도 안양시 만안구 전파로 30, 504호(유천팩토피아)
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">이메일:</span> info@gresystem.co.kr
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <div id='map'></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p>주식회사 지알이시스템 | 대표이사 이승욱 | 사업자번호 278-87-01597</p>
+      <p class="lead">Copyright &copy; 2022 GRE System</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <em class="bi bi-arrow-up-circle h1"></em>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Modal enroll -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">상담 접수</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">연락처를 남기시면 담당자를 배정해서 연락드리겠습니다.</p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="col-form-label">
+              이름:
+            </label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="org-name" class="col-form-label">
+              소속:
+            </label>
+            <input type="text" class="form-control" id="org-name">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="col-form-label">
+              전화번호:
+            </label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">
+              이메일주소:
+            </label>
+            <input type="text" class="form-control" id="email">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        <button type="button" class="btn btn-primary">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Detailed Spec -->
+<div class="modal fade" id="detailedSpec" tabindex="-1" aria-labelledby="detailedSpecLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detailedSpecLabel">상세 제원</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered table-hover mb-3">
+          <thead>
+            <tr>
+              <td>항목</td>
+              <td>규격</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>전기적 특성</td>
+              <td>입력 : 단상 220 V, 60 Hz, 최대 16 <br>출력 : 단상 220V, 60 Hz, 최대 15 A (3.3 KW) </td>
+            </tr>
+            <tr>
+              <td>표시 장치 </td>
+              <td>2.08인치 MONO OLED LCD (256*64) <br>
+                일자 시간 누적전력 순간전력 충전시간 통신상태 표시</td>
+            </tr>
+            <tr>
+              <td>전력량계 규격</td>
+              <td>교규 전자식 전력량계 <br>
+                단상2선식 220V 15(5)A 60Hz 1.0급</td>
+            </tr>
+            <tr>
+              <td>크기</td>
+              <td>135(W) x 70(D) x 210(H) (벽면 거치대 포함)</td>
+            </tr>
+            <tr>
+              <td>무게</td>
+              <td>1.5 Kg</td>
+            </tr>
+            <tr>
+              <td>충전 속도</td>
+              <td>최대 3.3 kW</td>
+            </tr>
+            <tr>
+              <td>인증 방식</td>
+              <td>RFID/NFC 기반 카드 인증</td>
+            </tr>
+            <tr>
+              <td>통신 방식</td>
+              <td>WI-FI / LTE Cat.M1 (B3, B5)</td>
+            </tr>
+            <tr>
+              <td>충전 방식</td>
+              <td>J1772 지원 충전 케이블 사용</td>
+            </tr>
+            <tr>
+              <td>한계 동작 온도 범위</td>
+              <td>-25C ~ 55C</td>
+            </tr>
+            <tr>
+              <td>제품 재질</td>
+              <td>난연 ABS+PC 재질</td>
+            </tr>
+            <tr>
+              <td>부가기능</td>
+              <td>과전류 발생시 전력 차단 <br>
+                최대출력전류 설정 <br>
+                원격 소프트웨어 업데이트</td>
+            </tr>
+            <tr>
+              <td>통신 규격</td>
+              <td>OCPP 1.6 호환</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+  crossorigin="anonymous"
+></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiamVvbmdzb29oIiwiYSI6ImNreXdta2tpOTAycTIycnBnYml3d2diZ3kifQ.c2ovOfD6zaNcoMjDAvsYMA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-71.060982, 42.35725],
+    zoom: 18
+  });
+</script>
+</body>
+</html>
+
+<!-- Origin: https://www.youtube.com/watch?v=4sosXZsdy-s --> 
+<!-- https://www.github.com/bradtraversy/50projects50days -->

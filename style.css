@@ -1,0 +1,45 @@
+/* [class*="col"] {
+  padding: 1rem;
+  background-color: #33b5e5;
+  border: 2px solid #fff;
+  color: #fff;
+} */  
+
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+.navbar {
+  border-bottom: 1px solid grey;
+}
+
+#learn::before,
+#questions::before,
+#instructors::before {
+  display: block;
+  content: '';
+  height: 30px;
+}
+
+#showcase .col-md {
+  padding: 10px;
+}
+
+#showcase img,
+#learn img {
+  border-radius: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
