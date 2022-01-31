@@ -17,10 +17,12 @@ body::before {
 
 #learn::before,
 #questions::before,
-#instructors::before {
+#instructors::before,
+#testimonies::before,
+#company::before {
   display: block;
   content: '';
-  height: 30px;
+  height: 40px;
 }
 
 #showcase .col-md {
